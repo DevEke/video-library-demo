@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { useState } from "react";
 import { FiSearch, FiX } from 'react-icons/fi';
-import rmvFilter from './assets/rmv-filter-icon.svg';
 
 
 function SearchFilter(props) {

@@ -1,23 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiArrowRight, FiCheck, FiX } from 'react-icons/fi';
+import { FiArrowLeft, FiCheck } from 'react-icons/fi';
 
 
 function Course(props) {
     const [activeVideo, setActiveVideo] = useState({});
-    const [leftPane, setLeftPane] = useState(true);
     const { course } = props;
 
     const loadVideo = (video) => {
         setActiveVideo(video);
-    }
-
-    const toggleLeftPane = () => {
-        if (leftPane) {
-            setLeftPane(false);
-        } else {
-            setLeftPane(true);
-        }
     }
     
     return (
@@ -25,7 +16,7 @@ function Course(props) {
             <Link className="back-mbl__btn" to="/">
                 <FiArrowLeft size={20} className="back" />
             </Link>
-            <div style={leftPane ? {left: 0} : {left: '-300px'}} className="course__left-pane">
+            <div className="course__left-pane">
                 <div className="course__nav">
                     <div className="pane__nav">
                     <Link className="back__btn" to="/">

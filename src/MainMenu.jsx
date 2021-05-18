@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { FiX } from 'react-icons/fi';
 
 function Menu(props) {
@@ -20,29 +20,29 @@ function Menu(props) {
 
         {/* Profile Picture */}
             <div className="menu__profile-pic">
-                <img src={user.pic}/>
+                <img src={user.pic} alt=""/>
             </div>
 
         {/* Menu Links */}
         <ul className="menu__links-1">
             <li>
-                <a>Edit Profile</a>
+                <a href="dead">Edit Profile</a>
             </li>
             <li>
-                <a>Update Resume</a>
+                <a href="dead">Update Resume</a>
             </li>
             <li>
-                <a>Sign Out</a>
+                <a href="dead">Sign Out</a>
             </li>
         </ul>
 
         {/* Menu Links */}
         <ul className="menu__links-2">
             <li>
-                <a>Settings</a>
+                <a href="dead">Settings</a>
             </li>
             <li>
-                <a>Help</a>
+                <a href="dead">Help</a>
             </li>
         </ul>
 

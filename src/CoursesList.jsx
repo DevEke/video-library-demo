@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function CoursesList(props) {
-    const { courses, filters, query } = props;
+    const { courses, filters } = props;
     
 
     let filteredVideos = courses.filter((course) => course.field.includes(filters[0]))
